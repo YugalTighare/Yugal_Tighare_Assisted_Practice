@@ -1,66 +1,53 @@
 package oops.java;
 
+class EncapTest {
+	   
+	   private String name;
+	   private String idNum;
+	   private int age;
+	   private float salary;
+
+	   public float getSalary() {
+		return salary;
+	   }
+
+	   public void setSalary(float salary) {
+		this.salary = salary;
+	   }
+
+	public int getAge() {
+	      return age;
+	   }
+
+	   public String getName() {
+	      return name;
+	   }
+
+	   public String getIdNum() {
+	      return idNum;
+	   }
+
+	   public void setAge( int newAge) {
+	      age = newAge;
+	   }
+
+	   public void setName(String newName) {
+	      name = newName;
+	   }
+
+	   public void setIdNum( String newId) {
+	      idNum = newId;
+	   }
+	}
+
 public class Encapsul {
 
-	 private int age;
-	 private String name;
-	 private int deptNo;
-		
-		
-		
-		
-		
-		public int getAge() {
-		return age;
-	}
+	   public static void main(String args[]) {
+	      EncapTest encap = new EncapTest();
+	      encap.setName("James");
+	      encap.setAge(20);
+	      encap.setIdNum("12343ms");
 
-
-
-
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-
-
-
-
-	public String getName() {
-		return name;
-	}
-
-
-
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-
-
-
-	public int getDeptNo() {
-		return deptNo;
-	}
-
-
-
-
-
-	public void setDeptNo(int deptNo) {
-		this.deptNo = deptNo;
-	}
-
-
-
-
-
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-
-		}
-
+	      System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());
+	   }
 	}
